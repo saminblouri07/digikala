@@ -1,0 +1,287 @@
+/* Wide banner */
+.wideBanner {
+  padding: 16px 16px 0;
+  background-color: white;
+}
+
+.wideBanner a {
+  display: block;
+}
+
+.wideBanner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.wideBanner .bannerLaptop {
+  display: none;
+}
+
+/*Shelf: mobile */
+.shelf {
+  padding-top: 24px;
+  background-color: white;
+}
+
+.shelfHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.shelfTitle {
+  margin: 0;
+  color: #23254e;
+  font-family: digi;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.shelfSub {
+  margin: 4px 0 0;
+  color: #8a8d94;
+  font-family: digi;
+  font-size: 12px;
+}
+
+.shelfAll {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #23254e;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.shelfAll .allFull {
+  display: none;
+}
+
+.shelfAll svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* swiper */
+.shelf .swiper-button-next,
+.shelf .swiper-button-prev {
+  display: none;
+}
+
+.shelf .shelfSwiper {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.shelf .shelfSwiper .swiper-slide {
+  width: 130px;
+  height: auto;
+  background: none;
+  display: block;
+}
+
+/* card */
+.shelfCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 252px;
+  padding: 8px;
+  border: 1px solid #e6e6e8;
+  border-radius: 12px;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.shelfCard img {
+  display: block;
+  width: 100%;
+  height: 112px;
+  object-fit: contain;
+}
+
+.shelfRating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b6f76;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.shelfRating .star {
+  color: #fbc02d;
+  font-size: 14px;
+}
+
+.shelfName {
+  height: 40px;
+  margin: 0;
+  overflow: hidden;
+  color: #5c606a;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.shelfOldRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shelfBadge {
+  padding: 1px 8px;
+  border-radius: 12px;
+  background-color: #d9272d;
+  color: white;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.shelfOld {
+  color: #a1a3a8;
+  font-family: digi;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.shelfPriceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #23254e;
+  font-family: digi;
+}
+
+.shelfPrice {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.shelfToman {
+  font-size: 10px;
+}
+
+/* Laptop: from 1024px*/
+@media (min-width: 1024px) {
+  .wideBanner {
+    padding: 24px 112px 0;
+  }
+
+  .wideBanner img {
+    border-radius: 20px;
+  }
+
+  .wideBanner .bannerMobile {
+    display: none;
+  }
+
+  .wideBanner .bannerLaptop {
+    display: block;
+  }
+
+  .shelf {
+    padding: 24px 112px 0;
+  }
+
+  .shelfPanel {
+    padding: 24px 0;
+    border: 1px solid #e6e6e8;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .shelfHeader {
+    padding: 0 24px;
+  }
+
+  .shelfTitle {
+    font-size: 20px;
+  }
+
+  .shelfSub {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  .shelfAll {
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    background-color: #f0f0f1;
+    font-size: 13px;
+  }
+
+  .shelfAll .allShort {
+    display: none;
+  }
+
+  .shelfAll .allFull {
+    display: inline;
+  }
+
+  .shelf .shelfSwiper {
+    margin-top: 20px;
+    padding: 0 24px 0 0;
+
+  }
+
+  .shelf .shelfSwiper .swiper-slide {
+    width: 164px;
+  }
+
+  .shelfCard {
+    height: 308px;
+    padding: 12px;
+  }
+
+  .shelfCard img {
+    height: 138px;
+  }
+
+  .shelfName {
+    height: 52px;
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .shelfPrice {
+    font-size: 18px;
+  }
+
+  /* arrows */
+  .shelf .shelfSwiper .swiper-button-next,
+  .shelf .shelfSwiper .swiper-button-prev {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: white;
+    color: #23254e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .shelf .shelfSwiper .swiper-button-disabled {
+    opacity: 0;
+  }
+}

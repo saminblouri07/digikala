@@ -1,0 +1,182 @@
+/* Mega menu */
+.megaMenu {
+  position: relative;
+  z-index: 1000;
+}
+
+.megaTrigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 16px 0 30px;
+  border-bottom: 2px solid #ef394e;
+  color: #0c0c0c;
+  font-family: digi;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.megaTrigger svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* dropdown */
+.megaDropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 270px;
+  height: 70vh;
+  background-color: #f0f0f1;
+  border-radius: 0 0 8px 0;
+}
+.megaMenu:hover .megaDropdown {
+  display: block;
+}
+
+/* sidebar */
+
+.megaList {
+  height: 100%;
+  margin: 0;
+  padding: 8px 0;
+  overflow-y: auto;
+  list-style: none;
+  direction: ltr;
+}
+
+.megaItem {
+  direction: rtl;
+}
+
+.megaLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 64px;
+  padding: 0 30px;
+  color: #0c0c0c;
+  font-family: digi;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.megaIcon {
+  width: 22px;
+  height: 22px;
+  color: #3f4064;
+}
+
+/* active item */
+.megaItem.active > .megaLink,
+.megaItem:hover > .megaLink {
+  background-color: white;
+  color: #ef394e;
+}
+
+.megaItem.active .megaIcon,
+.megaItem:hover .megaIcon {
+  color: #ef394e;
+}
+
+/* panel */
+.megaPanel {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 270px;
+  height: 100%;
+  padding: 16px 14px 24px;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 0 0 0 8px;
+  direction: ltr;
+}
+
+.megaPanel > * {
+  direction: rtl;
+}
+
+.megaItem.active > .megaPanel,
+.megaItem:hover > .megaPanel {
+  display: block;
+}
+
+/* AI */
+.megaList:hover .megaItem.active:not(:hover) > .megaPanel {
+  display: none;
+}
+
+.megaList:hover .megaItem.active:not(:hover) > .megaLink {
+  background: none;
+  color: #0c0c0c;
+}
+
+.megaList:hover .megaItem.active:not(:hover) .megaIcon {
+  color: #3f4064;
+}
+
+/* panel content */
+.megaAll {
+  display: block;
+  margin-bottom: 40px;
+  color: #0b5cab;
+  font-family: digi;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.megaCols {
+  display: flex;
+}
+
+.megaCol {
+  width: 275px;
+  padding-left: 24px;
+}
+
+.megaGroup {
+  margin-bottom: 28px;
+}
+
+.megaGroupTitle {
+  display: block;
+  margin-bottom: 8px;
+  padding-right: 10px;
+  border-right: 2px solid #ef394e;
+  color: #0c0c0c;
+  font-family: digi;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 300ms ease;
+}
+
+.megaGroupTitle:hover{
+  color: #ef394e;
+}
+
+.megaLinks {
+  margin: 0;
+  padding: 0 10px 0 0;
+  list-style: none;
+}
+
+.megaLinks a {
+  display: block;
+  padding: 8px 0;
+  color: #81858b;
+  font-family: digi;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.megaLinks a:hover {
+  color: #ef394e;
+}

@@ -1,0 +1,105 @@
+.firstBanner .swiper {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f1;
+}
+
+.firstBanner .swiper-slide {
+  width: 90%;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: none;
+  display: block;
+}
+
+.firstBanner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* arrows */
+.firstBanner .swiper-button-next,
+.firstBanner .swiper-button-prev,
+.firstBanner .swiper-pagination {
+  display: none;
+}
+
+/* Laptop: 1024px */
+@media (min-width: 1024px) {
+  .firstBanner {
+    padding: 0 0 16px;
+  }
+
+  .firstBanner .swiper-slide {
+    width: 100%;
+    height: 26vw;
+    border-radius: 0;
+  }
+
+  .firstBanner .swiper-button-next,
+  .firstBanner .swiper-button-prev {
+    display: flex;
+    top: auto;
+    bottom: 24px;
+    margin-top: 0;
+    width: 48px;
+    height: 48px;
+    padding: 14px;
+    border-radius: 50%;
+    background-color: white;
+    color: #333333;
+  }
+
+  .firstBanner .swiper.FirstSwiper .swiper-button-prev {
+    right: 16px;
+    left: auto;
+  }
+
+  .firstBanner .swiper.FirstSwiper .swiper-button-next {
+    right: 68px;
+    left: auto;
+  }
+
+  .firstBanner .swiper-pagination {
+    display: block;
+    bottom: 16px;
+  }
+
+  .firstBanner .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #424242;
+    opacity: 1;
+  }
+
+  .firstBanner .swiper-pagination-bullet-active {
+    width: 24px;
+    border-radius: 4px;
+    background: #1a1a1a;
+  }
+  
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background-color: white;
+}
+
+.firstBanner {
+    position: sticky;
+    top: 209px;
+    z-index: 1;
+}
+
+.pageSection {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    border-radius: 20px;
+}

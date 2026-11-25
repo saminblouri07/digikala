@@ -1,0 +1,347 @@
+/* Amazing offers: mobile */
+.amazing {
+  position: relative;
+  z-index: 2;
+  padding-top: 16px;
+  background-color: white;
+}
+
+.amazingPanel {
+  padding-bottom: 16px;
+  /* border-radius: 16px; */
+  background: linear-gradient(135deg, #ef394e, #d42a4a);
+}
+
+.amazingHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.amazingLogo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.amazingLogo svg {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
+.amazingTimer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  direction: ltr;
+  color: white;
+  font-family: digi;
+  font-weight: 700;
+}
+
+.amazingTimer .timeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: white;
+  color: #23254e;
+  font-size: 14px;
+}
+
+.amazingAll {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: auto;
+  color: white;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.amazingAll svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* swiper */
+.amazing .amazingSwiper {
+  width: 100%;
+  height: auto;
+  padding: 0 16px;
+}
+
+.amazing .amazingSwiper .swiper-slide {
+  width: 130px;
+  height: auto;
+  background: none;
+  display: block;
+}
+
+.amazing .amazingSwiper .swiper-slide:first-of-type {
+  border-radius: 0 12px 12px 0;
+  overflow: hidden;
+}
+
+.amazing .amazingSwiper .swiper-slide:last-of-type {
+  border-radius: 12px 0 0 12px;
+  overflow: hidden;
+}
+
+/* product card */
+.amazingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 228px;
+  padding: 8px;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.amazingCard img {
+  display: block;
+  width: 100%;
+  height: 114px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.amazingCard .productTitle {
+  height: 44px;
+  margin: 0;
+  overflow: hidden;
+  color: #424750;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.amazingCard .oldRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.amazingCard .discountBadge {
+  padding: 1px 8px;
+  border-radius: 12px;
+  background-color: #d9272d;
+  color: white;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.amazingCard .oldPrice {
+  color: #a1a3a8;
+  font-family: digi;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.amazingCard .priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #23254e;
+  font-family: digi;
+}
+
+.amazingCard .priceNum {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.amazingCard .toman {
+  font-size: 10px;
+}
+
+/* viewall card */
+.amazingAllCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 228px;
+  padding: 0 12px;
+  background-color: white;
+  color: #23254e;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.amazingAllCard .circleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #e0e0e2;
+  border-radius: 50%;
+}
+
+.amazingAllCard svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tablet: from 768px */
+@media (min-width: 768px) {
+  .amazingTimer {
+    gap: 6px;
+    font-size: 18px;
+  }
+
+  .amazingTimer .timeBox {
+    width: auto;
+    height: auto;
+    background: none;
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* Amazing offers*/
+.amazing .swiper-button-next,
+.amazing .swiper-button-prev {
+  display: none;
+}
+
+.amazingAll .allFull {
+  display: none;
+}
+
+/* Amazing offers: laptop */
+@media (min-width: 1024px) {
+  .amazing {
+    padding: 24px 112px 0;
+  }
+
+  .amazingPanel {
+    display: flex;
+    align-items: center;
+    height: 320px;
+    padding: 16px 0;
+    border-radius: 20px;
+  }
+
+  /* header becomes column */
+  .amazingHeader {
+    flex: 0 0 170px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .amazingLogo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .amazingLogo svg:first-of-type {
+    width: 65px;
+    height: auto;
+  }
+
+  .amazingLogo svg:last-of-type {
+    width: 130px;
+    height: auto;
+  }
+
+  .amazingTimer {
+    gap: 4px;
+  }
+
+  .amazingTimer .timeBox {
+    font-size: 16px;
+  }
+
+  .amazingAll {
+    justify-content: center;
+    gap: 6px;
+    height: 34px;
+    margin-right: 0;
+    padding: 0 14px;
+    border-radius: 8px;
+    background-color: white;
+    color: #23254e;
+    font-size: 12px;
+  }
+
+  .amazingAll svg {
+    width: 14px;
+    height: 14px;
+  }
+
+
+  /* swiper */
+  .amazing .amazingSwiper {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .amazing .amazingSwiper .swiper-slide {
+    width: 168px;
+  }
+
+  /* cards */
+  .amazingCard {
+    height: 288px;
+    padding: 12px;
+  }
+
+  .amazingCard img {
+    height: 144px;
+  }
+
+  .amazingCard .productTitle {
+    height: 52px;
+    line-height: 26px;
+  }
+
+  .amazingCard .priceNum {
+    font-size: 18px;
+  }
+
+  .amazingAllCard {
+    height: 288px;
+  }
+
+  /* arrows */
+  .amazing .amazingSwiper .swiper-button-next,
+  .amazing .amazingSwiper .swiper-button-prev {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: white;
+    color: #23254e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .amazing .amazingSwiper .swiper-button-disabled {
+    opacity: 0;
+  }
+}
+
+.amazing .amazingSwiper {
+  padding: 0 15px;
+}

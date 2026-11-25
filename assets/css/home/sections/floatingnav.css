@@ -1,0 +1,133 @@
+/*Floating bottom nav*/
+body {
+  padding-bottom: 80px;
+}
+
+.floatingNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 80px;
+  padding: 0 16px 24px;
+}
+
+.floatingNavPill {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 4px;
+  background-color: white;
+  border-radius: 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.floatingNavItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #6b6b6b;
+  text-decoration: none;
+}
+
+.floatingNavItem.active {
+  background-color: #f0f0f1;
+  color: #0c0c0c;
+}
+
+.floatingNavItem svg {
+  width: 24px;
+  height: 24px;
+}
+
+.floatingNavSupport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c4dff, #2f80ff);
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.floatingNavSupport svg {
+  width: 24px;
+  height: 24px;
+}
+
+.floatingNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 80px;
+  padding: 0 16px 24px;
+  background: linear-gradient(to top, white 35%, rgba(255, 255, 255, 0));
+}
+
+.floatingNavSupport .supportText {
+  display: none;
+}
+
+/* Tablet: from 768px */
+@media (min-width: 768px) {
+  .floatingNav {
+    justify-content: center;
+  }
+
+  .floatingNavPill {
+    flex: 0 0 280px;
+  }
+}
+
+/* Laptop: from 1024px */
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .floatingNav {
+    right: auto;
+    height: auto;
+    padding: 0 0 24px 24px;
+    background: none;
+  }
+
+  .floatingNavPill {
+    display: none;
+  }
+
+  .floatingNavSupport {
+    width: auto;
+    height: 48px;
+    padding: 0 20px;
+    gap: 8px;
+    border-radius: 24px;
+    font-family: digi;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .floatingNavSupport .supportText {
+    display: inline;
+  }
+}
+
+

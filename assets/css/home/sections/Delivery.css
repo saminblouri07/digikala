@@ -1,0 +1,321 @@
+/* Delivery: mobile */
+.delivery {
+  padding: 0 16px;
+  margin-top: 24px;
+  background-color: white;
+}
+
+.deliveryPanel {
+  padding: 16px 12px;
+  border-radius: 20px;
+  background-color: #fff8e5;
+}
+
+.deliveryHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 4px 12px;
+}
+
+.deliveryLogo {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
+.deliveryTitle {
+  margin: 0;
+  color: #0c0c0c;
+  font-family: digi;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* address */
+.deliveryAddress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 52px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background-color: #ffe9cc;
+  color: #0c0c0c;
+  font-family: digi;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.deliveryAddress .infoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f57c00;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.deliveryAddress .addressLink {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  color: #f57c00;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.deliveryAddress .addressLink svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* swiper */
+.delivery .deliverySwiper {
+  position: relative;
+  width: 100%;
+}
+
+.delivery .deliverySwiper .swiper-slide {
+  width: 130px;
+  height: auto;
+  opacity: 0.45;
+}
+
+/* card */
+.deliveryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 228px;
+  padding: 8px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 12px;
+  background-color: #fffdf6;
+  text-decoration: none;
+}
+
+.deliveryCard .cardImage {
+  position: relative;
+}
+
+.deliveryCard .cardImage img {
+  display: block;
+  width: 100%;
+  height: 114px;
+  object-fit: contain;
+}
+
+.deliveryCard .ratingRow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.deliveryCard .rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  color: #81858b;
+  font-family: digi;
+  font-size: 11px;
+}
+
+.deliveryCard .rating::after {
+  content: "★";
+  color: #fbb02d;
+  font-size: 11px;
+}
+
+.deliveryCard .colorDots {
+  display: flex;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+.deliveryCard .dot {
+  width: 12px;
+  height: 12px;
+  margin-right: -4px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.deliveryCard .dotGray {
+  background-color: #6b6b6b;
+}
+
+.deliveryCard .dotGreen {
+  background-color: #4caf50;
+}
+
+.deliveryCard .dotPink {
+  background-color: #f8c6d0;
+}
+
+.deliveryCard .dotBlue {
+  background-color: #3f51b5;
+}
+
+.deliveryCard .dotPurple {
+  background-color: #8c7ae6;
+}
+
+.deliveryCard .productTitle {
+  height: 44px;
+  margin: 0;
+  overflow: hidden;
+  color: #424750;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.deliveryCard .productPrices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 48px;
+  min-height: 0;
+}
+
+.deliveryCard .oldRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.deliveryCard .oldPrice {
+  color: #a1a3a8;
+  font-family: digi;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.deliveryCard .discountBadge {
+  padding: 1px 8px;
+  border-radius: 12px;
+  background-color: #fb7c8a;
+  color: white;
+  font-family: digi;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.deliveryCard .priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #23254e;
+  font-family: digi;
+}
+
+.deliveryCard .priceNum {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.deliveryCard .toman {
+  font-size: 10px;
+}
+
+/* arrows */
+.delivery .swiper-button-next,
+.delivery .swiper-button-prev {
+  display: none;
+}
+
+/* Delivery: laptop */
+@media (min-width: 1024px) {
+  .delivery {
+    padding: 0 112px;
+    margin-top: 32px;
+  }
+
+  .deliveryPanel {
+    padding: 20px 12px 12px;
+    border-radius: 20px;
+  }
+
+  .deliveryHeader {
+    padding: 0 12px 12px;
+  }
+
+  .deliveryLogo {
+    height: 28px;
+  }
+
+  .deliveryTitle {
+    font-size: 20px;
+  }
+
+  .deliveryAddress {
+    height: 48px;
+    margin: 0 0 12px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .deliveryAddress .addressLink {
+    font-size: 13px;
+  }
+
+  .delivery .deliverySwiper {
+    padding: 0;
+  }
+
+  .delivery .deliverySwiper .swiper-slide {
+    width: 168px;
+  }
+
+  .deliveryCard {
+    height: 288px;
+    padding: 12px;
+  }
+
+  .deliveryCard .cardImage img {
+    height: 144px;
+  }
+
+  .deliveryCard .productTitle {
+    height: 52px;
+    font-size: 12px;
+    line-height: 26px;
+  }
+
+  .deliveryCard .priceNum {
+    font-size: 18px;
+  }
+
+  .delivery .deliverySwiper .swiper-button-next,
+  .delivery .deliverySwiper .swiper-button-prev {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 11px;
+    border: 1px solid #e0e0e2;
+    border-radius: 50%;
+    background-color: white;
+    color: #23254e;
+  }
+
+  .delivery .deliverySwiper .swiper-button-disabled {
+    opacity: 0;
+  }
+}
